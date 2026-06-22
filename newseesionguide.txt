@@ -1,0 +1,38 @@
+Every new chat (best workflow)
+
+Start your first message with:
+Please read guide.md and changelog.md first, then continue from current state. Do not scaffold from scratch.
+Immediately send a second message:
+Summarize current implementation status, what is completed, what is pending, and the next 3 concrete actions.
+Only after that, send your actual task:
+Example: Implement Phase 3 DB migration fixes and update changelog.md.
+Stronger first prompt (recommended)
+
+Use this full prompt as your first message in future sessions:
+Please read guide.md, changelog.md, and plan.md first.
+Then provide:
+Current state summary
+Completed vs pending phase checklist
+Exact next 3 implementation steps
+Files you plan to edit
+Do not recreate existing files unless I ask.
+During the session
+
+Ask the model to keep continuity:
+After each major change, update changelog.md.
+If architecture/setup changes, also ask:
+Update guide.md with the new setup/context.
+At the end of each session
+
+Send this closing instruction:
+Before finishing, add a final handoff note to changelog.md with:
+What changed
+What is pending
+Any blockers
+Exact next command to run
+This makes the next model pick up instantly.
+What this gives you
+
+No repeated rediscovery.
+Faster implementation in each session.
+A reliable memory trail across different AI models.
